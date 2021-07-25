@@ -32,7 +32,7 @@ type CronJobSpec struct {
 	// Schedule in Cron fomrat, see https://en.wikipedia.org/wiki/Cron.
 	Schedule string `json:"schedule"`
 
-	//+kubebuilder:validation:MinLength=0
+	//+kubebuilder:validation:Minimum=0
 
 	// StartingDeadlineSeconds is optional deadline in seconds for starting the job
 	// if it misses scheduled time for any reason. Missed jobs executions will be
