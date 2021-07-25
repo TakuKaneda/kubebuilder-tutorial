@@ -46,7 +46,7 @@ type CronJobSpec struct {
 	// - "Forbid": forbids concurrent runs, skipping next run if previous run hasn't finished yet;
 	// - "Replace": cancels currently running job and replaces it with a new one
 	// +optional
-	ConcurrencyPolicy ConcurrencyPolicy `json:"concurrentPolicy,omitempty"`
+	ConcurrencyPolicy ConcurrencyPolicy `json:"concurrencyPolicy,omitempty"`
 
 	// This flag tells the controller to suspend subsequent executions, it does
 	// not apply to already started executions. Defaults to false.
