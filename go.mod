@@ -1,4 +1,4 @@
-module github.com/TakuKaneda/kubebuilder-tutorial
+module tutorial.kubebuilder.io/kubebuilder-tutorial
 
 go 1.16
 
